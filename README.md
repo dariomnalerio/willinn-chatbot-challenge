@@ -14,7 +14,7 @@ This project is a chatbot application that leverages FAISS for vector storage an
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/willinn-chatbot-challenge.git
+    git clone https://github.com/dariomnalerio/willinn-chatbot-challenge.git
     cd willinn-chatbot-challenge
     ```
 
