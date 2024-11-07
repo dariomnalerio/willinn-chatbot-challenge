@@ -45,7 +45,8 @@ This project is a chatbot application that leverages FAISS for vector storage an
 - **`UPLOAD_EXTENSIONS`**: Allowed file extensions for uploads (`pdf`).
 - **`UPLOAD_PATH`**: Directory path for uploaded files (`db`).
 - **`FAISS_DB_NAME`**: Directory name for the local FAISS storage (`faiss_db`).
-- 
+
+
 ## Project Architecture
 
 The project is structured into several key directories to ensure modularity and maintainability:
