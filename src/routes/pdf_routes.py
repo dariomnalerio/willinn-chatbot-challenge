@@ -1,9 +1,6 @@
 from flask import Blueprint, request, jsonify
-from services.vectore_store_service import initialize_vector_store
-from services.vectore_store_service import process_and_store_file
-from config import Config
-from services.file_service import create_upload_folder
-from services.file_service import save_file
+from services.vectore_store_service import initialize_vector_store, process_and_store_file
+from services.file_service import create_upload_folder, save_file
 from utils import allowed_file
 
 pdf_routes = Blueprint('pdf_routes', __name__)
