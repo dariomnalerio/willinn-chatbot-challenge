@@ -29,7 +29,6 @@ This project is a chatbot application that leverages FAISS for vector storage an
 4. **Instal Required Models**:
     - **Embedding Model**: Install `nomic-embed-text` by running `ollama pull nomic-embed-text`
     - **LLM**: Install `llama3.2:1b` by running `ollama run llama3.2:1b`
-    - 
 5. **Run the application**:
     ```sh
     python src/app.py
