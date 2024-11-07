@@ -61,7 +61,7 @@ def process_and_store_file(file, vectore_store: FAISS):
     chunks = text_splitter.split_documents(pages)
 
     vectore_store.add_documents(documents=chunks)
-    vectore_store.save_local("test_db")
+    vectore_store.save_local(Config.FAISS_DB_NAME)
 
 
 def ask_question(question, vector_store: FAISS):
@@ -87,7 +87,7 @@ def ask_question(question, vector_store: FAISS):
     )
     prompt = """
     You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know.
-    Make sure your answer is relevant to the question and it is answered from the context only.
+    Make sure your answer is relevant to the question and it is answered from the context only. Make sure there are no \n\n in the answer.
     Question: {question} 
     Context: {context} 
     Answer:

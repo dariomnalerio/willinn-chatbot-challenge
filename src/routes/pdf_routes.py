@@ -12,7 +12,7 @@ def request_entity_too_large(error):
     return jsonify({'error': 'File too large'}), 413
 
 
-@pdf_routes.route('/upload', methods=['POST'])
+@pdf_routes.route('/', methods=['POST'])
 def upload_file():
     """
     Handle file upload, validation, saving, and processing.
